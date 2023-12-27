@@ -24,7 +24,7 @@ npm run start
 ```sh
 npm run build
 ```
-### Compile and Minify for Production
+### Upload to GitHub Pages
 
 ```sh
 npm run deploy
