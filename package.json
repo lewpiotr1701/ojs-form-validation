@@ -1,11 +1,14 @@
 {
   "name": "ojs-form-validation",
   "source": "src/index.html",
+  "public-url": "https://lewpiotr1701.github.io/ojs-form-validation/",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html --public-url ./",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "parcel": "^2.10.3"
   },
   "dependencies": {
