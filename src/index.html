@@ -3,13 +3,38 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>My First Parcel App</title>
+  <title>Form Validation</title>
   <link rel="stylesheet" href="styles.css" />
-  <script type="module" src="app.js"></script>
+  <script type="module" defer src="app.js"></script>
 </head>
 
 <body>
-  <h1>Hello, World!</h1>
+  <form id="form" class="form">
+    <h1>Form</h1>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name">
+    <div id="name-error" class="error"></div>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" placeholder="Enter your email">
+    <div id="email-error" class="error"></div>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password">
+    <div id="password-error" class="error"></div>
+
+    <label for="confirm">Confirm Password:</label>
+    <input type="password" id="confirm" name="confirm" placeholder="Confirm your password">
+    <div id="confirm-error" class="error"></div>
+
+    <label for="rodo" class="rodo-label">
+      <input type="checkbox" id="rodo" name="rodo">I agree to the terms and conditions
+    </label>
+    <div id="rodo-error" class="error"></div>
+
+    <button id="submit" type="button">Submit</button>
+  </form>
 </body>
 
 </html>
